@@ -522,6 +522,9 @@ public class NetworkProviderSettings extends RestrictedDashboardFragment
         resultReceivers.put(ITroubleshootingInfoProviderService.ISSUE_SUBJECT_IS_CELLULAR,
                 mMobileTroubleshootingReceiver);
         mTroubleshootingServiceConnection = new TroubleshootingServiceConnection(resultReceivers);
+
+        final Intent intent = this.getIntent();
+        mIsInSetupWizard = WizardManagerHelper.isAnySetupWizard(intent);
     }
 
     private void updateUserType() {
