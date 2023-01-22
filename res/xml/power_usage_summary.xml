@@ -97,6 +97,11 @@
             settings:requiresService="lineagehealth" />
     </com.android.settingslib.widget.UntitledPreferenceCategory>
 
+    <!-- Charging control -->
+    <lineageos.preference.LineagePartsPreference
+        android:key="charging_control"
+        settings:requiresService="lineagehealth" />
+
     <com.android.settingslib.widget.UntitledPreferenceCategory
         android:key="percentage_category">
         <SwitchPreferenceCompat
