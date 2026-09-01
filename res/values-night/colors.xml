@@ -125,5 +125,9 @@
     <color name="sc_materialColorOutline">@android:color/system_outline_dark</color>
     <color name="sc_materialColorOutlineVariant">@android:color/system_outline_variant_dark</color>
     <color name="homepage_thunderbolt_background">#f5c244</color>
+
+    <color name="setup_compat_footer_primary_button_bg_color">@*android:color/system_primary_dark</color>
+    <color name="setup_compat_footer_primary_button_text_color">@*android:color/system_on_primary_dark</color>
+
 </resources>
 
