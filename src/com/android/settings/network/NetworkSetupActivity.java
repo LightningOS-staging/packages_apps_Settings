@@ -27,6 +27,7 @@ import com.android.settings.network.NetworkProviderSettings;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SetupWizardUtils;
+import com.android.settings.Utils;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settingslib.widget.SettingsThemeHelper;
@@ -49,6 +50,7 @@ public class NetworkSetupActivity extends SettingsActivity implements ButtonBarH
                 && !PartnerConfigHelper.isGlifExpressiveEnabled(this)) {
             ThemeHelper.trySetSuwTheme(this);
         }
+        Utils.setupEdgeToEdge(this);
         super.onCreate(savedInstanceState);
     }
 
